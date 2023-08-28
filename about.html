@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To make sure the website works responsively on both small and bigger devices -->
+        <title>US-Gun-Death-Statistics-2013</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> <!-- Figure out differences between different browsers and make them look same in all of them-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Fonts that we will be using -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="about-style.css">
+    </head>
+    <body>
+        <a href="index.html" class="button">Go Back</a>
+        <!-- About me -->
+        <section class="paragraph" id="about">
+           <h2>Black Hat Vis</h2>
+           <div class="about-me__body">
+                <img src="img/blackHat1.png" alt="">
+                <p style="text-align: justify;">
+                    At first, a choropleth map was created to visualize the distribution of US gun death violations accross all states. 
+                    This visulization resembles <b>black hat</b> vis as the distribution is not correctly represented by choosing only three classes for it (0-10, 10-50, More than 50). 
+                    The title above the map also enforces this falsified information. Also, there should have been a legend title.
+                </p>
+
+                <img src="img/blackHat2.png" alt="">
+                <p style="text-align: justify;">
+                    To visualize distribution of city scale, a bubble chart was overlayed on the map based on the lat-lng of each city. 
+                    The reason this visulization resembles <b>black hat</b> is because the circle sizes are misrepresentative of the death counts. There should have been appropriate normalization for it.
+                </p>
+                
+               <!-- <img src="img/blackHat3.png" alt=""> For some reason not working-->
+               <img src="img2/2.png" alt="">
+                <p style="text-align: justify;">
+                    To further see the distribution of death counts at city/state scale, a pie chart and a horizontal bar chart is generated when the user hovers over the map.
+                    Problem with the pie chart is that, there is no legend describing which part resembles what gender (male/female). Also, the exact number should also be embedded with the chart.
+                    The same problem lies with the bar chart for age distribution.
+                </p>
+                <br><br>
+           </div>
+
+           <div class="about-me__body">
+                <h2>White Hat Vis</h2>
+                <div class="about-me__body">
+                    <img src="img/WhiteHat1.png" alt="">
+                    <p style="text-align: justify;">
+                        To fix the issues, in black hat visualizations, more classes were used in the choropleth map that aptly represents the distribution of death accross different states. A legend title was added below the legend.
+                        Also the misrepresentative title was replaced with information on how to interact with the map.
+                        The bubble chart was fixed by using proper radius for the circles.
+                    </p>
+                    <!-- <img src="img/whiteHat2.png" alt=""> For some reason not working-->
+                    <img src="img2/1.png" alt="">
+                    <p style="text-align: justify;">
+                        Proper colors, legends and axes titles were added with the pie chart and horizontal bar chart to aptly represent the distributions based on age and gender.
+                        Also, a title was provided above the two charts displaying which state or city's information is represented in the charts and also the total death count.
+                    </p>
+                    <img src="img/WhiteHat3.png" alt="">
+                    <p style="text-align: justify;">
+                        Additionally, a bar chart was generated at the very bottom to show the death counts accross all the states in one place.
+                    </p>
+                </div>
+           </div>
+           
+        <h3>Credits</h3>
+        <p>The visualizations were built using several Open Source components (Pandas, Javascript, HTML, CSS, SVG ,d3.js). <br>
+            Visualization inspirations from: 
+            <a href="https://bl.ocks.org/wboykinm/dbbe50d1023f90d4e241712395c27fb3">Bill Morris (Choropleth Map)</a>, 
+            <a href="https://d3-graph-gallery.com/">d3-graph-gallery</a>, 
+            <a href="https://github.com/academind/d3js-basics/tree/d3-demo-finished">Michelle Chandra (Basic US State Map)</a>,
+            <a href="http://bl.ocks.org/michellechandra/0b2ce4923dc9b5809922">Academind</a><br>
+            Also, thanks to: <a class="license" style = "text-decoration: none;" href="https://stackoverflow.com/">Stack Overflow</a>
+        </p>            
+        </section>
+
+    </body>
+</html>
