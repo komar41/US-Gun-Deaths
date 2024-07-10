@@ -5,7 +5,7 @@ This project aims to visualize and analyze gun-related deaths across the United 
 
 - __Access this project:__ https://komar41.github.io/US-Gun-Deaths
 - __GitHub repo:__ https://github.com/komar41/US-Gun-Deaths
-- __Tools used:__ - Pandas, JavaScript, HTML, CSS, SVG, D3.js
+- __Tools used:__ - Python, NumPy, Pandas, JavaScript, HTML, CSS, SVG, D3.js
 
 ## Components
 
