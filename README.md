@@ -35,14 +35,6 @@ This project aims to visualize and analyze gun-related deaths across the United 
 - Hover over states/cities to display detailed pie and bar charts
 - Title above the hover charts displays the selected state/city and total death count
 
-## Technologies Used
-- Pandas
-- JavaScript
-- HTML
-- CSS
-- SVG
-- D3.js
-
 ## Visualization Inspirations
 - [Bill Morris (Choropleth Map)](https://bl.ocks.org/wboykinm/dbbe50d1023f90d4e241712395c27fb3)
 - [D3 Graph Gallery](https://d3-graph-gallery.com/)
